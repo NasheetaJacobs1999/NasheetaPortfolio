@@ -45,3 +45,23 @@
     inherits: false;
     initial-value: 0%;
 }
+
+/* Navbar & Footer */
+
+:is(.navbar, footer) {
+    background-color: var(--bgHeaderFooter)
+}
+
+/* NNavbar */
+
+:is(.nav-link) {
+    color: var(--secondary);
+}
+/* Navbar */
+
+img[alt='logo'] {
+    width: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
