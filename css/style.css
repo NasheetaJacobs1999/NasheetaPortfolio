@@ -47,22 +47,38 @@
 }
 
 /* Navbar & Footer */
-
-:is(.navbar, footer) {
-    background-color: var(--bgHeaderFooter)
+:is(footer) {
+    background-color: var(--primary);
 }
 
-/* NNavbar */
-
+/* Navbar */
 :is(.nav-link) {
     color: var(--secondary);
 }
-/* Navbar */
 
+/* Navbar */
 img[alt='logo'] {
     width: 5rem;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
 }
+a{
+    transition: all 5s;
 
+    &:hover{
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+}
+
+/* Grid layout */
+:is(body) {
+    display: grid;
+    text-align: center;
+}
+
+/* Create three rows */
+:is(body) {
+    grid-template-rows: auto minmax(100%, 100dvh) auto;
+}
