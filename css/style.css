@@ -1,6 +1,6 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,8 +16,8 @@
     --alternative: darkolivegreen;
     --bgCAbout: #56744e;
     --mainBox-shadow: .2rem .2rem .1rem .2rem rgba(105, 96, 96, 0.75);
-    --card-box-shadow: .5vw .5vw 1vw rgba(85, 94, 9,=9, 0.9);
-    --text-shadow: .3ren .3rem .4rem rgba(78, 107, 91, 0.5);
+    --card-box-shadow: .5vw .5vw 1vw rgba(85, 94, 9, 9, 0.9);
+    --text-shadow: .3rem .3rem .4rem rgba(78, 107, 91, 0.5);
     --mainBg: hsla(145, 83%, 20%, 0.39);
     --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
 }
@@ -47,7 +47,7 @@
 }
 
 /* Navbar & Footer */
-:is(footer) {
+:is(nav, footer) {
     background-color: var(--primary);
 }
 
@@ -81,4 +81,7 @@ a{
 /* Create three rows */
 :is(body) {
     grid-template-rows: auto minmax(100%, 100dvh) auto;
+}
+:is(nav-link) {
+    color: aliceblue;
 }
