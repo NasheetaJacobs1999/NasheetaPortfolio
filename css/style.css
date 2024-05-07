@@ -46,42 +46,79 @@
     initial-value: 0%;
 }
 
-/* Navbar & Footer */
-:is(nav, footer) {
-    background-color: var(--primary);
+.gradient-custom {
+    /* fallback for old browsers /
+    background: #6a11cb;
+    
+    / Chrome 10-25, Safari 5.1-6 /
+    background: -webkit-linear-gradient(to right, rgba(186, 205, 146, 1), rgba(117, 164, 127, 1));
+    
+    / W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(186, 205, 146, 1), rgba(117, 164, 127, 1));
 }
 
-/* Navbar */
-:is(.nav-link) {
-    color: var(--secondary);
+.navbar-brand {
+  width: 70px;
+  height: 70px;
 }
 
-/* Navbar */
-img[alt='logo'] {
-    width: 5rem;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    object-position: center;
-}
-a{
-    transition: all 5s;
-
-    &:hover{
-        transform: scale(1.2);
-        text-decoration: underline;
-    }
+.container {
+    display: flex;
 }
 
-/* Grid layout */
-:is(body) {
-    display: grid;
+.maincontain {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .col-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .text {
     text-align: center;
-}
+  }
 
-/* Create three rows */
-:is(body) {
-    grid-template-rows: auto minmax(100%, 100dvh) auto;
-}
-:is(nav-link) {
-    color: aliceblue;
-}
+  .header-image {
+    width: 17rem;
+    border-radius: 20px 50px 20px 50px;
+    animation: movement 4s infinite;
+  }
+
+  @keyframes movement {
+    0% {
+        border-radius: 10px;
+    }
+    /* 25% {
+        border-radius: 15px 45px 15px 45px;
+    } */
+    50% {
+        border-radius: 20px 60px 20px 60px;
+    }
+    /* 75% {
+        border-radius: 15px 45px 15px 45px;
+    } */
+    100% {
+        border-radius: 10px;
+    }
+  }
+
+  .text-color {
+        background: -webkit-linear-gradient(#3B683A, #75CE73);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+
+  .maincontain {
+    background-image: linear-gradient(to right, #3B683A, #75CE73)
+  }
