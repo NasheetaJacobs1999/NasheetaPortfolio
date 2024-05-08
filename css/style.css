@@ -11,7 +11,6 @@
 }
 
 /* custom colors */
-
 :root {
     --primary: rgb(0, 0, 0);
     --secondary: white;
@@ -23,7 +22,6 @@
     --mainBg: hsla(145, 83%, 20%, 0.39);
     --bgImg: linear-gradient(to right, var(--awesome), var(--mainBg))
 }
-
 
 @property --top-left {
   syntax: "<percentage>";
@@ -88,6 +86,14 @@ main{
     border-radius: 100%;
   }
 
+  .techImage {
+    width: 5rem;
+    border-radius: 10%;
+  }
+  .testImage {
+    width: 10rem;
+  }
+
   @keyframes movement {
     0% {
         border-radius: 10px;
@@ -101,8 +107,8 @@ main{
   }
 
   .text-color {
-        background: linear-gradient(to bottom, black , #3B683A);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    background: linear-gradient(to bottom, black , #3B683A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
  
