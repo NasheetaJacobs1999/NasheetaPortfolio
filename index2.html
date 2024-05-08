@@ -11,11 +11,12 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark sticky-top gradient-custom">
+    <nav class="navbar navbar-dark bg-dark fixed-top gradient-custom">
         <div class="container-fluid justify-content-between">
             <img class="navbar-brand" src="./images/Port Logo.jpg" alt="Logo"/>
     
-        <nav class="navbar">
+        <nav class="navbar
+        ">
             <div class="container-fluid">
                 <ul class="navbar-nav d-flex flex-row">
                     <li class="nav-item">
@@ -43,23 +44,219 @@
             </div>
         </nav>
     </nav>
+    <main class="container-fluid">
 
-    <section id="home" class="home">
-
-        <div class="container-fluid maincontain mt-md-4 mt-0">
-            <div class="row">
-                <div class="col d-flex">
-                        <img src="/images/Home.jpg" alt="Image" class="header-image">
+        <!-- Home Section-->
+        <section id="home" class="container">
+            <div class="row py-5 justify-content-center align-items-center vh-100">
+                <div class="col">
+                    <img src="/images/20240422_100351.jpg" alt="Image" class="header-image">
                 </div>
-                <div class="col col-text">
+
+                <div class="col home-text">
                     <div class="text">
                         <h2>Nasheeta Jacobs</h2>
-                        <p class="text-color">Aspiring Software Developer</p>
+                        <h3 class="text-color">Aspiring Software Developer</h3>
                     </div>
                 </div>
             </div>
-        </div>
-</section>
+        </section>
+
+        <!--About Section-->
+        <section id="about">
+            <div class="container text-center">
+                <h3>About</h3>
+                <div class="row align-items-center vh-100">
+                  <div class="col about-text">
+                    <h3>Hi, I am Nasheeta Jacobs</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis error, veniam deserunt veritatis quod necessitatibus autem numquam praesentium modi quia natus, commodi quasi maxime officia dolorum perferendis eius, ducimus magnam?</p>
+                  </div>
+                  <div class="col">
+                    <img src="/images/20240422_100554.jpg" alt="aboutImage" class="about-image">
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <!--Resume Section (Education and Work Experience)-->
+        <section id="resume">
+            <div class="container text-center">
+                <h3>Resume:</h3>
+                <div class="row">
+    
+                    <div class="col">
+                        <h3>Education:</h3>
+                        <img src="/images/Oracle.jpg" alt="oracleLogo" class="resumePic">
+                        
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  The Oracle Academy
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h6>High School Subjects:</h6>
+                                    <ul>
+                                        <li>Math</li>
+                                        <li>English</li>
+                                        <li>Afrikaans</li>
+                                        <li>Business</li>
+                                        <li>Economics</li>
+                                        <li>Accounting</li>
+                                        <li>Life Orientation</li>
+                                      </ul> 
+                                </div>
+                              </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <class class="col">
+                        <h3>Work Experience:</h3>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Ampd Agency
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <h6>Ampd Agency - Promoter (2018 - 2019)</h6>
+                                <ul>
+                                    <li>Engaging with customers and selling the idea of the product was bulk of the job.</li>
+                                    <li>I had to ensure my work area, as well as myself, was prim and proper.</li>
+                                  </ul> 
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  RSG Safety Glass Products
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                 <h6>RSG Safety Glass Products - Customer Service (2019 - 2020)</h6>
+                                 <ul>
+                                    <li>Liaising with customers on order progress.</li>
+                                    <li>Compiling job cards for manufacturing of jobs.</li>
+                                    <li>Daily analysis of Work in Progress production scheduling.</li>
+                                    <li>Planning production schedule with factory manager to ensure that lead times are achieved.</li>
+                                  </ul> 
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Miron Frameless Glass Designs
+                                  </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                    <h6>Miron Frameless Glass Designs - Jnr Estimator (2020 - 2021)</h6>
+                                    <ul>
+                                        <li>Finding out the client requirements.</li>
+                                        <li>Researching materials, equipment and labour costs.</li>
+                                        <li>Gathering quotes from sub contractors and suppliers.</li>
+                                        <li>Assessing levels of risks on projects.</li>
+                                        <li>Analyzing company data, exchange rates and prices.</li>
+                                        <li>Preparing and submitting quotes for work to be done.</li>
+                                        <li>Compiling and filing project information.</li>
+                                        <li>Compiling daily information for job costing.</li>
+                                        <li>Preparing project progress reports for managements.</li>
+                                      </ul> 
+                                  </div>
+                                </div>
+                              </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  Ticktin Timbers
+                                </button>
+                              </h2>
+                              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                 <h6>Ticktin Timbers - Administrator/Reeceptionist (2021 - 2023)</h6>
+                                 <ul>
+                                    <li>Answering incoming calls and redirecting to the respective person.</li>
+                                    <li>Taking messages where the respective person is unable to take the call.</li>
+                                    <li>Receive payments from customers.</li>
+                                    <li>Capturing of all payments (cash and credit card) on Pastel Accounting.</li>
+                                    <li>Reconciling cash and credit card payments on a daily basis.</li>
+                                    <li>Tracking all payments.</li>
+                                    <li>Scanning of all documents into sequence files.</li>
+                                  </ul> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                    </class>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--Skills & Attributes Section-->
+        <section id="skills">
+            <div class="container text-center">
+                <h3>Skills & Attributes</h3>
+                <div class="row">
+
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <img src="/images/html Logo.jpg" alt="htmlLogo">
+                        <img src="/images/css Logo.jpg" alt="cssLogo">
+                        <img src="/images/Java Logo.png" alt="jsLogo">
+
+                    </div>
+
+                    <div class="col">
+                        <h3>Soft Skills</h3>
+                    </div>
+
+                    <div class="col">
+                        <h3>Attributes</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
             
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
