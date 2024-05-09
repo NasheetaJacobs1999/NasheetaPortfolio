@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Nasheeta's Portfolio</title>
 </head>
-<body>
+<body class="gradient-custom">
 
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark fixed-top gradient-custom">
@@ -64,15 +64,19 @@
           </div>
         </section>
 
+        <div class="grid gap-3 row-gap-1" id="about">
+          <div class="p-2 g-col-3"><br /></div>
+          <div class="p-2 g-col-3"><br /></div>
+        </div>
         <!--About Section-->
-        <section id="about">
+        <section>
             <div class="container text-center">
-                <h3>About</h3>
+                <h3 class="sectHeader">About</h3>
                 <div class="row py-1 align-items-center vh-100 justify-content-center">
 
                   <div class="col about-text">
                     <div class="aboutContent">
-                      <h3 class="intro-text">Hi, I am Nasheeta Jacobs</h3>
+                      <h3 class="intro-text typewriter">Hi, I am Nasheeta Jacobs</h3>
                       <div class="about-card">
 
                         <p>
@@ -92,11 +96,15 @@
                 </div>
               </div>
         </section>
-
+        
+        <div class="grid gap-3 row-gap-1" id="resume">
+          <div class="p-2 g-col-3"><br /></div>
+          <div class="p-2 g-col-3"><br /></div>
+        </div>
         <!--Resume Section (Education and Work Experience)-->
-        <section id="resume" class="vh-100">
+        <section class="resume">
             <div class="container text-center">
-                <h3>Resume:</h3>
+                <h3 class="sectHeader">Resume:</h3>
                 <div class="row">
     
                     <div class="col">
@@ -222,30 +230,37 @@
 
         </section>
 
+        <div class="grid gap-3 row-gap-1" id="skills">
+          <div class="p-2 g-col-3"><br /></div>
+          <div class="p-2 g-col-3"><br /></div>
+        </div>
         <!--Skills & Attributes Section-->
-        <section id="skills">
-          <h3 class="text-center">Skills & Attributes</h3>
-            <div class="container text-start">
+        <section class="vh-100">
+          <h3 class="text-center sectHeader">Skills & Attributes</h3>
+            <div class="container text-center py-5">
                 <div class="row">
 
                     <div class="col">
                         <h3>Technical Skills</h3>
-                        <div class="vstack gap-3">
-                          <div class="p-2">
+                        <div class="vstack text-start gap-3">
+                          <div class="p-2 d-flex">
                             <img src="/images/html Logo.jpg" alt="htmlLogo" class="techImage">
+                            <p class="techLevel">Proficient</p>
                           </div>
-                          <div class="p-2">
+                          <div class="p-2 d-flex">
                             <img src="/images/css Logo.jpg" alt="cssLogo" class="techImage">
+                            <p class="techLevel">Intermediate</p>
                           </div>
-                          <div class="p-2">
+                          <div class="p-2 d-flex">
                             <img src="/images/Java Logo.png" alt="jsLogo" class="techImage">
+                            <p class="techLevel">Beginner</p>
                           </div>
                         </div>
                     </div>
 
                     <div class="col ">
                         <h3>Soft Skills</h3>
-                        <div class="skills">
+                        <div class="saInfo text-start">
                           <ul>
                             <li>Computer literacy: Word, Excel, Outlook, Pastel</li>
                             <li>Math</li>
@@ -258,7 +273,7 @@
 
                     <div class="col">
                         <h3>Attributes</h3>
-                        <div class="atts">
+                        <div class="saInfo text-start">
                           <ul>
                             <li>Organizational</li>
                             <li>Effective communicator</li>
@@ -274,14 +289,18 @@
             </div>
         </section>
 
+        <div class="grid gap-3 row-gap-1" id="testimonial">
+          <div class="p-2 g-col-3"><br /></div>
+          <div class="p-2 g-col-3"><br /></div>
+        </div>
         <!--Testimonial-->
-        <section id="test">
+        <section>
           <div class="container text-center">
-            <h3>Testimonials</h3>
+            <h3 class="sectHeader">Testimonials</h3>
             <div class="row align-items-center vh-100">
 
               <div class="col">
-                <p>Zakariya Salie</p>
+                <h4>Zakariya Salie</h4>
                 <img src="/images/Zak.jpg" alt="zakariya" class="testImage">
                 <div class="test">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis repudiandae alias eos totam perferendis, saepe aut qui sequi, quibusdam vel placeat quae incidunt itaque in tempore, magnam iure expedita.</p>
@@ -289,15 +308,7 @@
               </div>
 
               <div class="col">
-                <p>Amy</p>
-                <img src="/images/Amy.jpg" alt="amy" class="testImage">
-                <div class="test">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis repudiandae alias eos totam perferendis, saepe aut qui sequi, quibusdam vel placeat quae incidunt itaque in tempore, magnam iure expedita.</p>
-                </div>
-              </div>
-
-              <div class="col">
-                <p>Azhar Jacobs</p>
+                <h4>Azhar Jacobs</h4>
                 <img src="/images/Azhar.jpg" alt="azhar" class="testImage">
                 <div class="test">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis repudiandae alias eos totam perferendis, saepe aut qui sequi, quibusdam vel placeat quae incidunt itaque in tempore, magnam iure expedita.</p>
@@ -305,15 +316,23 @@
               </div>
 
               <div class="col">
-                <p>Keira Kistensamy</p>
-                <img src="/images/Keira.jpg" alt="keira" class="testImage">
+                <h4>Amy</h4>
+                <img src="/images/Amy.jpg" alt="amy" class="testImage">
                 <div class="test">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis repudiandae alias eos totam perferendis, saepe aut qui sequi, quibusdam vel placeat quae incidunt itaque in tempore, magnam iure expedita.</p>
                 </div>
               </div>
 
               <div class="col">
-                <p>Jamin </p>
+                <h4>Joel Mukanya</h4>
+                <img src="/images/joel2.jpg" alt="joel" class="testImage">
+                <div class="test">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis repudiandae alias eos totam perferendis, saepe aut qui sequi, quibusdam vel placeat quae incidunt itaque in tempore, magnam iure expedita.</p>
+                </div>
+              </div>
+
+              <div class="col">
+                <h4>Jamin </h4>
                 <img src="/images/Jamin.jpg" alt="jamin" class="testImage">
                 <div class="test">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit omnis repudiandae alias eos totam perferendis, saepe aut qui sequi, quibusdam vel placeat quae incidunt itaque in tempore, magnam iure expedita.</p>
@@ -324,10 +343,14 @@
           </div>
         </section>
 
+        <div class="grid gap-3 row-gap-1" id="projects">
+          <div class="p-2 g-col-3"><br /></div>
+          <div class="p-2 g-col-3"><br /></div>
+        </div>
         <!--Projects Carousel Section-->
-        <section id="projects" class="align-items-center">
+        <section class="align-items-center">
           <div id="captions" class="carousel slide">
-            <h3>Projects</h3>
+            <h3 class="sectHeader">Projects</h3>
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -343,7 +366,7 @@
                   <aside class="card team1">
                       <img src="/images/My Calculator.png" alt="calculator">
                       <h2 class="name">My Calculator</h2>
-                      <a class="text-center" href="">moms</a>
+                      <a class="text-center" href="https://calculator-murex-pi.vercel.app/" target="_blank">Live Server</a>
                   </aside>
                 </div>
    
@@ -351,13 +374,15 @@
                   <aside class="card team1">
                       <img src="/images/My Grid Example.png" alt="grid">
                       <h2 class="name">Grid Example</h2>
+                      <a class="text-center" href="https://grid-example-jade.vercel.app/" target="_blank">Live Server</a>
                   </aside>
                 </div>
-   
+  
                 <div class="carousel-item">
                   <aside class="card team1">
                     <img class="projimg" src="/images/My Keyboard.png" alt="keyboard">
                     <h2 class="name">My Keyboard</h2>
+                    <a class="text-center" href="https://keyboard-blush.vercel.app/" target="_blank">Live Server</a>
                 </aside>
                 </div>
    
@@ -365,6 +390,7 @@
                   <aside class="card team1">
                     <img src="/images/My Flipcard.png" alt="flipCard">
                     <h2 class="name">Flip Card Example</h2>
+                    <a class="text-center" href="https://flip-card-olive.vercel.app/" target="_blank">Life Server</a>
                   </aside>
                 </div>
    
@@ -372,6 +398,7 @@
                   <aside class="card team1">
                     <img src="/images/My Flexbox.png" alt="flexbox">
                     <h2 class="name">Flexbox Example</h2>
+                    <a class="text-center" href="https://flex-box-gold.vercel.app/" target="_blank">Live Server</a>
                   </aside>
                 </div>
    
@@ -387,65 +414,90 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-      </section>
+        </section>
 
+        <div class="grid gap-3 row-gap-1" id="contact">
+          <div class="p-2 g-col-3"><br /></div>
+          <div class="p-2 g-col-3"><br /></div>
+        </div>
         <!--Contact Section-->
-        <section id="contact">
+        <section>
           <div class="container text-center">
-
-            <div class="row">
-              <h3 class="display-2">Contact Info</h3>
-              <h2>Message Me</h2>
+            <h3 class="sectHeader">Contact Me</h3>
+        
+            <div class="form-card1">
+              <div class="form-card2">
+                <form class="form"
+                action="https://formspree.io/f/mqkrjaka"
+                method="POST">
+                  <p class="form-heading">Let's Get In Touch</p>
+        
+                  <label>
+                    <div class="form-field">
+                      <input required="" placeholder="Name" class="input-field" type="text" />
+                    </div>
+        
+                  </label>
+        
+                  <label>
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Email"
+                        class="input-field"
+                        type="email" name="email"
+                      />
+                    </div>
+        
+                  </label>
+                  <label>
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Subject"
+                        class="input-field"
+                        type="text"
+                      />
+                    </div>
+        
+                  </label>
+                  <label>
+        
+                    <div class="form-field">
+                      <textarea
+                        required=""
+                        name="message"
+                        cols="30"
+                        rows="3"
+                        class="input-field"
+                      ></textarea>
+                    </div>
+                  </label>
+        
+                  <label>
+        
+                    <button class="message-btn" type="submit">Send Message</button>
+                  </label>
+        
+        
+        
+                </form>
+              </div>
             </div>
-          <div class="row flex-column flex-md-row justify-content-between gap-2">
-            <div class="col bg-secondary">
-              <form action="https://formspree.io/f/moqgrgpe" method="POST">
-                
-                <div class="mb-3">
-                    <label for="exampleInputName" class="form-label">Name</label>
-                    <input name="name" type="name" class="form-control" id="exampleInputName"
-                        aria-describedby="nameHelp" required>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input name="email" type="email" class="form-control" id="exampleInputEmail1"
-                        aria-describedby="emailHelp" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Message</label>
-                    <input name="message" type="text" class="form-control message"
-                        id="exampleInputPassword1" required>
-                </div>
-                <div class="d-block d-md-flex justify-content-between ">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                  <button type="reset" class="btn btn-primary">Clear</button>
-                </div>
-            </form>
-
-            </div>
-            <div class="col bg-body-tertiary">
-              <div class="card">
-                <div class="card-body text-black">
-                    <p class="Contact-text">Let's Get In Touch</p>
-                    <p><i class="bi bi-telephone-forward-fill"></i> Phone: 063-585-6284</p>
-                    <p><i class="fa-solid fa-envelope"></i> Email: nasheetahjacobs@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Address: Kenwyn, Cape Town</p>
-                </div>
-            </div>
-
-            </div>
-          </div>
-
+        
           </div>
         </section>
-        
-
-
-
-
 
 
     </main>
+
+    <footer>
+      <div class="footer">
+        <p>Cellphone Number: 063 585 6284</p>
+        <p>Gmail: nasheetahjacobs@gmail.com</p>
+      </div>
+
+    </footer>
 
 
 
