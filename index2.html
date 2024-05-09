@@ -47,7 +47,8 @@
     <main class="container-fluid">
 
         <!-- Home Section-->
-        <section id="home" class="container">
+        <section id="home">
+          <div class="container">
             <div class="row py-5 justify-content-center align-items-center vh-100">
                 <div class="col">
                     <img src="/images/Home.jpg" alt="homeImage" class="header-image">
@@ -60,6 +61,7 @@
                     </div>
                 </div>
             </div>
+          </div>
         </section>
 
         <!--About Section-->
@@ -67,17 +69,23 @@
             <div class="container text-center">
                 <h3>About</h3>
                 <div class="row py-1 align-items-center vh-100 justify-content-center">
+
                   <div class="col about-text">
                     <div class="aboutContent">
-                      <h3>Hi, I am Nasheeta Jacobs</h3>
-                      <p>
-                        I have gained better understanding on web-developing through self-learning. In every task that I'm given, I am willing to go the extra mile. I love everything about coding, especially how it challenges the mind. 
-                      </p>
-                      <p>
-                        My hobbies include a variety of things. I enjoy going outdoors, interacting with friends and family, reading books, playing games, and coding in my spare time. I love my little family, which is made up of myself, my husband and our 3 little fur babies (kittens). 
-                      </p>
+                      <h3 class="intro-text">Hi, I am Nasheeta Jacobs</h3>
+                      <div class="about-card">
+
+                        <p>
+                          I have gained better understanding on web-developing through self-learning. In every task that I'm given, I am willing to go the extra mile. I love everything about coding, especially how it challenges the mind. 
+                        </p>
+                        <p>
+                          My hobbies include a variety of things. I enjoy going outdoors, interacting with friends and family, reading books, playing games, and coding in my spare time. I love my little family, which is made up of myself, my husband and our 3 little fur babies (kittens). 
+                        </p>
+                      </div>
+
                     </div>
                   </div>
+
                   <div class="col">
                     <img src="/images/About.jpg" alt="aboutImage" class="about-image">
                   </div>
@@ -86,7 +94,7 @@
         </section>
 
         <!--Resume Section (Education and Work Experience)-->
-        <section id="resume">
+        <section id="resume" class="vh-100">
             <div class="container text-center">
                 <h3>Resume:</h3>
                 <div class="row">
@@ -95,15 +103,15 @@
                         <h3>Education:</h3>
                         <img src="/images/Oracle.jpg" alt="oracleLogo" class="resumePic">
                         
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion mx-auto" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseD1" aria-expanded="true" aria-controls="collapseD1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseD1"  aria-controls="collapseD1">
                                   The Oracle Academy
                                 </button>
                               </h2>
                               <div id="collapseD1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                                <div class="accordion-body text-start">
                                     <h6>High School Subjects:</h6>
                                     <ul>
                                         <li>Math</li>
@@ -123,7 +131,7 @@
                     <class class="col">
                         <h3>Work Experience:</h3>
 
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion mx-auto" id="accordionExample">
                             <div class="accordion-item">
                               <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -131,7 +139,7 @@
                                 </button>
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                                <div class="accordion-body text-start">
                                 <h6>Ampd Agency - Promoter (2018 - 2019)</h6>
                                 <ul>
                                     <li>Engaging with customers and selling the idea of the product was bulk of the job.</li>
@@ -147,7 +155,7 @@
                                 </button>
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                                <div class="accordion-body text-start">
                                  <h6>RSG Safety Glass Products - Customer Service (2019 - 2020)</h6>
                                  <ul>
                                     <li>Liaising with customers on order progress.</li>
@@ -166,7 +174,7 @@
                                   </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                  <div class="accordion-body">
+                                  <div class="accordion-body text-start">
                                     <h6>Miron Frameless Glass Designs - Jnr Estimator (2020 - 2021)</h6>
                                     <ul>
                                         <li>Finding out the client requirements.</li>
@@ -190,7 +198,7 @@
                                 </button>
                               </h2>
                               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
+                                <div class="accordion-body text-start">
                                  <h6>Ticktin Timbers - Administrator/Reeceptionist (2021 - 2023)</h6>
                                  <ul>
                                     <li>Answering incoming calls and redirecting to the respective person.</li>
@@ -216,8 +224,8 @@
 
         <!--Skills & Attributes Section-->
         <section id="skills">
-            <div class="container text-center">
-                <h3>Skills & Attributes</h3>
+          <h3 class="text-center">Skills & Attributes</h3>
+            <div class="container text-start">
                 <div class="row">
 
                     <div class="col">
@@ -317,74 +325,63 @@
         </section>
 
         <!--Projects Carousel Section-->
-        <section class="align-items-center">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <section>
-              <p>My Skills</p>
-          </section>
+        <section id="projects" class="align-items-center">
+          <div id="captions" class="carousel slide">
+            <h3>Projects</h3>
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#captions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#captions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#captions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#captions" data-bs-slide-to="5" aria-label="Slide 6"></button>
               </div>
               
-              <div class="carousel-inner"><!--The Carousel Container-->
+              <div class="carousel-inner m-5"><!--The Carousel Container-->
    
                 <div class="carousel-item active"><!--The Carousel Slider-->
                   <aside class="card team1">
-                      <img src="/images/Calculator.PNG" alt="calculator">
+                      <img src="/images/My Calculator.png" alt="calculator">
                       <h2 class="name">My Calculator</h2>
-                      <p class="role">Head of Marketing</p>
-                      <p class="work-at">Markson Inc</p>
+                      <a class="text-center" href="">moms</a>
                   </aside>
                 </div>
    
                 <div class="carousel-item">
                   <aside class="card team1">
-                      <img src="/images/Grid.PNG" alt="grid">
+                      <img src="/images/My Grid Example.png" alt="grid">
                       <h2 class="name">Grid Example</h2>
-                      <p class="role">Co-Founder</p>
-                      <p class="work-at">Duper Duper</p>
                   </aside>
                 </div>
    
                 <div class="carousel-item">
                   <aside class="card team1">
-                    <img src="/images/Keyboard.PNG" alt="keyboard">
+                    <img class="projimg" src="/images/My Keyboard.png" alt="keyboard">
                     <h2 class="name">My Keyboard</h2>
-                    <p class="role">Head of Corporate</p>
-                    <p class="work-at">Development, MCX</p>
                 </aside>
                 </div>
    
                 <div class="carousel-item">
                   <aside class="card team1">
-                    <img src="/images/Grid.PNG" alt="flipCard">
+                    <img src="/images/My Flipcard.png" alt="flipCard">
                     <h2 class="name">Flip Card Example</h2>
-                    <p class="role">Overseas Sales</p>
-                    <p class="work-at">Newness Golf</p>
                   </aside>
                 </div>
    
                 <div class="carousel-item">
                   <aside class="card team1">
-                    <img src="/images/Flexbox.PNG" alt="flexbox">
+                    <img src="/images/My Flexbox.png" alt="flexbox">
                     <h2 class="name">Flexbox Example</h2>
-                    <p class="role">DevOps Engineer</p>
-                    <p class="work-at">Ylyeer</p>
                   </aside>
                 </div>
    
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#captions" data-bs-slide="prev">
                 <i class="fa-solid fa-arrow-left"></i>
                 <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#captions" data-bs-slide="next">
                 <i class="fa-solid fa-arrow-right"></i>
                 <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -393,8 +390,53 @@
       </section>
 
         <!--Contact Section-->
-        <section class="contact">
+        <section id="contact">
+          <div class="container text-center">
 
+            <div class="row">
+              <h3 class="display-2">Contact Info</h3>
+              <h2>Message Me</h2>
+            </div>
+          <div class="row flex-column flex-md-row justify-content-between gap-2">
+            <div class="col bg-secondary">
+              <form action="https://formspree.io/f/moqgrgpe" method="POST">
+                
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input name="name" type="name" class="form-control" id="exampleInputName"
+                        aria-describedby="nameHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <input name="message" type="text" class="form-control message"
+                        id="exampleInputPassword1" required>
+                </div>
+                <div class="d-block d-md-flex justify-content-between ">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="reset" class="btn btn-primary">Clear</button>
+                </div>
+            </form>
+
+            </div>
+            <div class="col bg-body-tertiary">
+              <div class="card">
+                <div class="card-body text-black">
+                    <p class="Contact-text">Let's Get In Touch</p>
+                    <p><i class="bi bi-telephone-forward-fill"></i> Phone: 063-585-6284</p>
+                    <p><i class="fa-solid fa-envelope"></i> Email: nasheetahjacobs@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Address: Kenwyn, Cape Town</p>
+                </div>
+            </div>
+
+            </div>
+          </div>
+
+          </div>
         </section>
         
 
